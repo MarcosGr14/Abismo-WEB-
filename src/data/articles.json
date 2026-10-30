@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "luz-en-la-oscuridad",
+    "title": "Luz en la oscuridad: el idioma de la bioluminiscencia",
+    "kicker": "Biología",
+    "read": 3,
+    "excerpt": "En el océano profundo, producir luz propia no es un lujo: es camuflaje, señuelo y alarma al mismo tiempo.",
+    "body": [
+      "A partir de unos 1 000 metros no llega luz solar. Aun así, la oscuridad está lejos de ser total: muchísimos habitantes del mar profundo fabrican su propia luz mediante una reacción química entre una molécula llamada luciferina y una enzima, la luciferasa. Algunos la producen ellos mismos; otros la obtienen de bacterias luminosas con las que viven en simbiosis.",
+      "La luz azul-verdosa domina porque es la que mejor viaja por el agua. Los peces linterna, por ejemplo, tienen fotóforos en el vientre que igualan la tenue luz que baja desde arriba y borran su silueta ante quien mira desde abajo: se llama contrailuminación. El pez pescador abisal, en cambio, cuelga un señuelo luminoso frente a su boca para atraer a sus presas.",
+      "Otros usan la luz como alarma o como cortina de humo: ciertos calamares y camarones expulsan nubes luminosas para despistar a un depredador, y se cree que algunas medusas destellan para atraer a depredadores aún mayores que quien las ataca. Es un idioma hecho de destellos que, en gran parte, seguimos aprendiendo a leer."
+    ],
+    "sources": "NOAA Ocean Exploration; MBARI (Monterey Bay Aquarium Research Institute)."
+  },
+  {
+    "slug": "presion-y-frio",
+    "title": "Presión y frío: cómo se vive bajo el peso del océano",
+    "kicker": "Física y vida",
+    "read": 3,
+    "excerpt": "Cada diez metros suman otra atmósfera de presión. En la fosa más profunda, el cuerpo de un animal soporta más de mil.",
+    "body": [
+      "La presión aumenta aproximadamente una atmósfera cada 10 metros. En el fondo del Abismo de Challenger, en la fosa de las Marianas, a cerca de 10 900 metros, supera las 1 000 atmósferas: más de una tonelada de fuerza por cada centímetro cuadrado.",
+      "Los animales no resisten esa presión «aguantándola», sino igualándola: sus cuerpos son blandos, gelatinosos y carecen de cavidades de aire rígidas como la vejiga natatoria. Además, muchos peces acumulan moléculas pequeñas como la TMAO, que ayudan a estabilizar las proteínas y cuya concentración tiende a aumentar con la profundidad.",
+      "A eso se suma el frío: bajo la capa superficial la temperatura cae rápido y, en gran parte del océano profundo, ronda entre 1 y 4 °C. Con poco alimento y mucha oscuridad, la vida va despacio: metabolismos lentos, cuerpos que ahorran energía y, en muchos casos, vidas largas."
+    ],
+    "sources": "NOAA Ocean Exploration; Yancey et al., PNAS (2014)."
+  },
+  {
+    "slug": "nieve-marina",
+    "title": "Nieve marina: el alimento que cae del cielo",
+    "kicker": "Ecología",
+    "read": 3,
+    "excerpt": "Una lluvia lenta de restos orgánicos alimenta a casi todo lo que vive en la oscuridad.",
+    "body": [
+      "Sin luz no hay fotosíntesis, así que la vida del fondo depende de lo que cae desde arriba: restos de plancton, mucosidad, heces y cuerpos diminutos que se agrupan en copos. Los científicos lo llaman nieve marina, y en las imágenes de los sumergibles parece una nevada lenta bajo los focos.",
+      "Esos copos pueden tardar semanas en llegar al fondo, y por el camino casi todo es consumido o reciclado por bacterias y animales. Lo poco que llega sostiene a pepinos de mar, gusanos, crustáceos y peces del fondo. Además, este flujo transporta carbono desde la superficie hacia el océano profundo, un proceso clave para el clima conocido como bomba biológica.",
+      "De vez en cuando llega un banquete extraordinario: el cadáver de una ballena puede alimentar un ecosistema entero durante años, incluso décadas. Es la excepción en un mundo de escasez, y una razón por la que muchas criaturas del abismo tienen bocas enormes y estómagos que se estiran."
+    ],
+    "sources": "NOAA Ocean Exploration; Woods Hole Oceanographic Institution."
+  }
+]

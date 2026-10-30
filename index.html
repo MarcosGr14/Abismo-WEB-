@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABISMO — Descenso a las profundidades del océano</title>
+  <meta name="description" content="Un descenso de 11 000 metros: zonas del océano, criaturas bioluminiscentes y relatos del mar profundo.">
+  <meta name="theme-color" content="#041428">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ABISMO — Descenso a las profundidades del océano">
+  <meta property="og:description" content="De la superficie luminosa a la fosa más profunda: la vida donde no llega el sol.">
+  <meta property="og:image" content="https://TU-DOMINIO.pages.dev/og.png">
+  <meta property="og:url" content="https://TU-DOMINIO.pages.dev/">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <div class="sea" id="sea" aria-hidden="true"></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" hidden aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="#inicio">ABISMO</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#zonas">Zonas</a></li>
+        <li><a href="#criaturas">Criaturas</a></li>
+        <li><a href="#bitacora">Bitácora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="meter" id="meter" aria-hidden="true">
+    <div class="meter__read">
+      <span class="meter__num"><span id="depth-n">0</span> m</span>
+      <span class="meter__zone" id="depth-zone">Epipelágica</span>
+    </div>
+    <div class="meter__track"><span class="meter__thumb"></span></div>
+  </aside>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <div class="hero__in">
+        <h1 id="titulo" class="hero__title">ABISMO</h1>
+        <p class="hero__sub">Un descenso de 11 000 metros hacia la vida que brilla donde no llega el sol.</p>
+        <a class="hero__cue" href="#zonas"><span>Desciende</span><i aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <div id="zonas">
+      <section class="zone zone--left" data-zone="0" aria-labelledby="z0">
+        <div class="zone__panel glass">
+          <p class="eyebrow" data-reveal>0 – 200 m · Zona de luz</p>
+          <h2 id="z0" data-reveal>Epipelágica</h2>
+          <p data-reveal>La capa que baña el sol. Aquí viven el fitoplancton que produce buena parte del oxígeno que respiramos y los grandes nadadores: atunes, tiburones, delfines. Es la zona más rica… y la única que conocemos bien.</p>
+          <p class="zone__stat" data-reveal>Presión ≈ 1–21 atm · Luz solar abundante</p>
+        </div>
+      </section>
+
+      <section class="zone zone--right" data-zone="1" aria-labelledby="z1">
+        <div class="zone__panel glass">
+          <p class="eyebrow" data-reveal>200 – 1 000 m · Zona del crepúsculo</p>
+          <h2 id="z1" data-reveal>Mesopelágica</h2>
+          <p data-reveal>La luz se apaga y empieza el espectáculo. Cada noche, miles de millones de peces linterna y calamares suben a alimentarse cerca de la superficie y regresan al amanecer: la mayor migración del planeta.</p>
+          <p class="zone__stat" data-reveal>Presión ≈ 21–101 atm · Luz tenue, azul</p>
+        </div>
+      </section>
+
+      <section class="zone zone--left" data-zone="2" aria-labelledby="z2">
+        <div class="zone__panel glass">
+          <p class="eyebrow" data-reveal>1 000 – 4 000 m · Zona de medianoche</p>
+          <h2 id="z2" data-reveal>Batipelágica</h2>
+          <p data-reveal>Oscuridad total, salvo por la luz que fabrican los propios animales. Aquí cazan los cachalotes que bucean desde arriba y se esconden el calamar vampiro y el pez pescador. El agua ronda los pocos grados sobre cero.</p>
+          <p class="zone__stat" data-reveal>Presión ≈ 101–401 atm · Sin luz solar</p>
+        </div>
+      </section>
+
+      <section class="zone zone--right" data-zone="3" aria-labelledby="z3">
+        <div class="zone__panel glass">
+          <p class="eyebrow" data-reveal>4 000 – 6 000 m · El abismo</p>
+          <h2 id="z3" data-reveal>Abisopelágica</h2>
+          <p data-reveal>Llanuras de sedimento fino que cubren gran parte del fondo marino. Todo es lento: pepinos de mar, pulpos Dumbo y estrellas de mar viven de la nieve marina que cae desde miles de metros más arriba.</p>
+          <p class="zone__stat" data-reveal>Presión ≈ 401–601 atm · Agua casi helada</p>
+        </div>
+      </section>
+
+      <section class="zone zone--left" data-zone="4" aria-labelledby="z4">
+        <div class="zone__panel glass">
+          <p class="eyebrow" data-reveal>6 000 – 11 000 m · Las fosas</p>
+          <h2 id="z4" data-reveal>Hadal</h2>
+          <p data-reveal>Nombrada por Hades, vive en el fondo de las fosas oceánicas. En el Abismo de Challenger, en las Marianas, se han registrado anfípodos, holoturias y peces caracol. Es el último rincón del planeta que apenas empezamos a explorar.</p>
+          <p class="zone__stat" data-reveal>Presión &gt; 600 atm · Hasta ≈ 1 100 atm</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="sec" id="criaturas" aria-labelledby="t-criaturas">
+      <header class="sec__head">
+        <p class="eyebrow" data-reveal>Bestiario</p>
+        <h2 id="t-criaturas" data-reveal>Criaturas</h2>
+        <p class="lead" data-reveal>Seis habitantes de la oscuridad. Pulsa «Ver ficha» para ver la foto y sus datos. Los textos y fotos se leen en vivo desde Wikipedia; si no hay conexión verás datos locales. Las profundidades y tamaños son aproximados.</p>
+      </header>
+      <ul class="grid" id="criaturas-lista"></ul>
+      <noscript><p class="lead">Activa JavaScript para ver las criaturas.</p></noscript>
+    </section>
+
+    <section class="sec" id="bitacora" aria-labelledby="t-bitacora">
+      <header class="sec__head">
+        <p class="eyebrow" data-reveal>Bitácora</p>
+        <h2 id="t-bitacora" data-reveal>Relatos del fondo</h2>
+        <p class="lead" data-reveal>Tres lecturas cortas para entender cómo se vive donde no hay sol.</p>
+      </header>
+      <div id="bitacora-lista-wrap"><ul class="posts" id="bitacora-lista"></ul></div>
+      <article class="post-detail glass" id="articulo" aria-labelledby="articulo-titulo" hidden></article>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__in">
+      <p class="foot__brand">ABISMO</p>
+      <p>Proyecto visual sobre la vida en el océano profundo. © <span id="year">2026</span></p>
+      <p>Fuentes y créditos:
+        <a href="https://es.wikipedia.org" rel="noopener noreferrer" target="_blank">Wikipedia</a> (texto CC BY-SA 4.0, imágenes de Wikimedia Commons),
+        <a href="https://oceanexplorer.noaa.gov" rel="noopener noreferrer" target="_blank">NOAA Ocean Exploration</a>,
+        <a href="https://www.mbari.org" rel="noopener noreferrer" target="_blank">MBARI</a>.
+        Tipografías: Cormorant Garamond e Inter (SIL OFL). Hecho con Three.js y GSAP.
+      </p>
+    </div>
+  </footer>
+
+  <dialog class="ficha" id="ficha" aria-labelledby="ficha-titulo"></dialog>
+</body>
+</html>
